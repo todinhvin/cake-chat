@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin:auto
 }
 
 .App-logo {
@@ -26,6 +29,72 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.box_chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.emotion {
+  height: 35px;
+  line-height: 35px;
+  width: 200px;
+  border: 2px solid;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.emotion:hover {
+  background:green;
+  transition: all linear 0.3s;
+}
+
+.emotion.active {
+  background:green;
+  transition: all linear 0.3s;
+}
+
+.button_send {
+  width: 150px;
+  border-radius: 8px;
+  margin-left: 16px;
+  background: #2fbd2f;
+  color: #fff;
+  font-weight: 700;
+  font-size:15px;
+  cursor: pointer;
+}
+
+
+
+.input_text {
+  height: 40px;
+  width: 500px;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.loading {
+  background: #efecec;
+  padding: 8px;
+  border-radius: 16px;
+  width: 50%;
+  margin-right: auto;
+}
+
+.text {
+  padding: 8px;
+  border-radius: 16px;
+  width: 50%;
 }
 
 @keyframes App-logo-spin {
